@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoArgProgComponent } from './components/logo-arg-prog/logo-arg-prog.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     HomeComponent,
     LoginComponent,
     LogoArgProgComponent,
-    ProyectoComponent
+    ProyectoComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
