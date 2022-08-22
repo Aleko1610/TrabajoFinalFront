@@ -16,6 +16,11 @@ import { LoginComponent } from './components/login/login.component';
 import { LogoArgProgComponent } from './components/logo-arg-prog/logo-arg-prog.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
+import { NewexperienciaComponent } from './components/experiencia/newexperiencia/newexperiencia.component';
+import { EditexperienciaComponent } from './components/experiencia/editexperiencia/editexperiencia.component';
+import { ModelComponent } from './model/model.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { SkillsComponent } from './components/skills/skills.component';
     LoginComponent,
     LogoArgProgComponent,
     ProyectoComponent,
-    SkillsComponent
+    SkillsComponent,
+    EditeducacionComponent,
+    NeweducacionComponent,
+    NewexperienciaComponent,
+    EditexperienciaComponent,
+    ModelComponent
   ],
   imports: [
     BrowserModule,
