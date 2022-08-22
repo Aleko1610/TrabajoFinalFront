@@ -14,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoArgProgComponent } from './components/logo-arg-prog/logo-arg-prog.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LogoArgProgComponent } from './components/logo-arg-prog/logo-arg-prog.c
     HeaderComponent,
     HomeComponent,
     LoginComponent,
-    LogoArgProgComponent
+    LogoArgProgComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,
