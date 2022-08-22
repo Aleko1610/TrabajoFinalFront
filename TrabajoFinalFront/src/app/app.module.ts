@@ -11,6 +11,7 @@ import { ExoerienciaComponent } from './components/exoeriencia/exoeriencia.compo
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeaderComponent } from './components/header/header.component';
     ExoerienciaComponent,
     ExperienciaComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
