@@ -10,13 +10,13 @@ import { TokenService } from 'src/app/service/token.service';
 export class LogoArgProgComponent implements OnInit {
   isLogged = false;
 
-  constructor(private router:Router, private tokenService: TokenService) { }
+  constructor(private router: Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
     if(this.tokenService.getToken()){
       this.isLogged=true;
-    }else{
-      this.isLogged = false;
+    } else {
+      this.isLogged=false;
     }
   }
 
@@ -29,3 +29,4 @@ export class LogoArgProgComponent implements OnInit {
     this.router.navigate(['/login'])
   }
 }
+

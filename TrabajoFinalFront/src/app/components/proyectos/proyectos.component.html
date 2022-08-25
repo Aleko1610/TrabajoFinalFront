@@ -1,0 +1,30 @@
+<section class="page-section portfolio" id="proyectos">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proyectos</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div><button type="button" class="btn btn-dark" routerLink="/nuevaproy" *ngIf="isLogged">Nuevo
+                    proyecto</button></div>
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let proyectos of proy">
+                        <td>
+                            <h2>{{proyectos.nombreP}}</h2>
+                        </td>
+                        <td>{{proyectos.descripcionP}}</td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-light" routerLink="/editproy/{{proyectos.id}}">
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                            <button class="btn btn-danger" (click)="delete(proyectos.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

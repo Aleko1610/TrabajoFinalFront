@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
-import { SExperienciaService } from 'src/app/service/s-experiencia.service';
+import { SerExperienciaService } from 'src/app/service/ser-experiencia.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = [];
 
-  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
+  constructor(private serExperiencia: SerExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
 
@@ -25,12 +25,12 @@ export class ExperienciaComponent implements OnInit {
   }
 
   cargarExperiencia(): void {
-    this.sExperiencia.lista().subscribe(data => { this.expe = data; })
+    this.serExperiencia.lista().subscribe(data => { this.expe = data; })
   }
 
   delete(id?: number){
     if(id != undefined){
-      this.sExperiencia.delete(id).subscribe(
+      this.serExperiencia.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
         }, err => {
