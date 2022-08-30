@@ -11,7 +11,13 @@
                     <label for="descripcionS">Descripcion de la skill</label>
                     <input type="text" placeholder="Describa las tareas realizadas" class="form-control"
                         id="descripcionS" name="descripcionS" [(ngModel)]="descripcionS" required>
-                </div><br>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeS">Porcentaje de la skill</label>
+                    <input type="number" min=1 max=100 placeholder="Ingrese un numero de 1 a 100" class="form-control"
+                        id="porcentajeS" name="porcentajeS" [(ngModel)]="porcentajeS" required>
+                </div>
+                <br>
                 <button class="btn btn-outline-primary">Agregar skill</button>
             </form>
         </div>

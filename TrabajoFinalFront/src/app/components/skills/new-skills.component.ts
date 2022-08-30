@@ -11,6 +11,7 @@ import { SkillsService } from 'src/app/service/skills.service';
 export class NewSkillsComponent implements OnInit {
   nombreS: string = '';
   descripcionS: string = '';
+  porcentajeS: string='';
 
   constructor(private Skills: SkillsService, private router: Router) { }
 
@@ -18,7 +19,7 @@ export class NewSkillsComponent implements OnInit {
   }
 
   onCreate(): void {
-    const ski = new Skills(this.nombreS, this.descripcionS);
+    const ski = new Skills(this.nombreS, this.descripcionS, this.porcentajeS);
     this.Skills.save(ski).subscribe(
       data => {
         alert("Experiencia añadida");

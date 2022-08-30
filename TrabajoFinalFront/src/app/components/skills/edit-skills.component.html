@@ -11,7 +11,13 @@
                     <label for="descripcionS">Descripcion de la skill</label>
                     <input type="text" class="form-control" id="descripcionS" name="descripcionS"
                         [(ngModel)]="ski.descripcionS" required>
-                </div><br>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeS">Porcentaje de la skill</label>
+                    <input type="number" class="form-control" id="porcentajeS" name="porcentajeS"
+                        [(ngModel)]="ski.porcentajeS" required>
+                </div>
+                <br>
                 <button class="btn btn-outline-primary">Actualizar</button>
             </form>
         </div>

@@ -16,6 +16,14 @@
                             <h2>{{skills.nombreS}}</h2>
                         </td>
                         <td>{{skills.descripcionS}}</td>
+                        
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" [style.width.%]="skills.porcentajeS" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">{{skills.porcentajeS}}%</div>
+                              </div>
+                        </td>
+                        
                         <td *ngIf="isLogged">
                             <button class="btn btn-light" routerLink="/editskl/{{skills.id}}">
                                 <i class="bi bi-pencil-fill"></i> EDITAR</button>
